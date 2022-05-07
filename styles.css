@@ -1,0 +1,122 @@
+.glavno {
+  position:relative;
+  width: 300px;
+  height: auto;
+  margin: 0 auto;
+  border: 1px solid #000000;
+  padding: 10px;
+  margin-top: 71px;
+}
+
+.desno {
+  padding: 10px;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 300px;
+  margin-left: -11px;
+  border: 1px solid #000000;
+  background-color: white;
+}
+
+.levo {
+  position: absolute;
+  top: -1px;
+  left: 100%;
+  width: 100px;
+  height: 300px;
+  padding: 10px;
+}
+
+.naslov {
+  font-size: 48px;
+  text-align: center;
+}
+
+.portreti {
+  width: 250px;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tekstovi {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.menu {
+  width: 50%;
+  float: left;
+}
+
+@media (max-width : 993px) {
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+.dnd-e {
+  display: none;
+}
+}
+
+@media (max-width : 601px) {
+.centerpos {
+  text-align: center;
+}
+.dnd {
+  display: none;
+}
+}
+
+@media (min-width:601px) {
+
+.test {
+  float: left;
+}
+}
+
+@media (min-width : 993px) {
+  .centerpos {
+    text-align: center!important;
+  }
+}
+
+@media (min-width:601px) and (max-width : 993px) {
+  .dnd-m {
+    display: none;
+  }
+}
+html{ height:100%; }
+body { min-height:100%;  margin:0; }
+
+header {
+  height: 50px;
+  background: lightcyan;
+}
+
+article {
+  height: 1%;
+}
+
+footer {
+  height: 50px;
+}
+
+
+/**** Trick: ****/
+
+body {
+  display: table;
+  width: 100%;
+  background: url(bg.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body > footer {
+   display: table-row;
+}
